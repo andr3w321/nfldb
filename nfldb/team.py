@@ -54,7 +54,7 @@ def standard_team(team):
 
     team = team.lower()
     for teams in [teams1, teams2]:
-        for variants in teams1:
+        for variants in teams1 + teams2:
             for variant in variants:
                 if team == variant.lower():
                     return variants[0]
